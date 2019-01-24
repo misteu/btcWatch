@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE464CFB21F9BA4900B4573F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464CFA21F9BA4900B4573F /* AppDelegate.swift */; };
+		CE464CFD21F9BA4900B4573F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464CFC21F9BA4900B4573F /* ViewController.swift */; };
+		CE464D0021F9BA4900B4573F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE464CFE21F9BA4900B4573F /* Main.storyboard */; };
+		CE464D0221F9BA4C00B4573F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE464D0121F9BA4C00B4573F /* Assets.xcassets */; };
+		CE464D0521F9BA4C00B4573F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE464D0321F9BA4C00B4573F /* LaunchScreen.storyboard */; };
+		CE464D1021F9BA4C00B4573F /* btcwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */; };
+		CE464D1B21F9BA4C00B4573F /* btcwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D1A21F9BA4C00B4573F /* btcwatchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE464D0C21F9BA4C00B4573F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE464CEF21F9BA4800B4573F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE464CF621F9BA4900B4573F;
+			remoteInfo = btcwatch;
+		};
+		CE464D1721F9BA4C00B4573F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE464CEF21F9BA4800B4573F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE464CF621F9BA4900B4573F;
+			remoteInfo = btcwatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE464CF721F9BA4900B4573F /* btcwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btcwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE464CFA21F9BA4900B4573F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE464CFC21F9BA4900B4573F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE464CFF21F9BA4900B4573F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE464D0121F9BA4C00B4573F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE464D0421F9BA4C00B4573F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE464D0621F9BA4C00B4573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE464D0B21F9BA4C00B4573F /* btcwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btcwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btcwatchTests.swift; sourceTree = "<group>"; };
+		CE464D1121F9BA4C00B4573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE464D1621F9BA4C00B4573F /* btcwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btcwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE464D1A21F9BA4C00B4573F /* btcwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btcwatchUITests.swift; sourceTree = "<group>"; };
+		CE464D1C21F9BA4C00B4573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE464CF421F9BA4900B4573F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D0821F9BA4C00B4573F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D1321F9BA4C00B4573F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE464CEE21F9BA4800B4573F = {
+			isa = PBXGroup;
+			children = (
+				CE464CF921F9BA4900B4573F /* btcwatch */,
+				CE464D0E21F9BA4C00B4573F /* btcwatchTests */,
+				CE464D1921F9BA4C00B4573F /* btcwatchUITests */,
+				CE464CF821F9BA4900B4573F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE464CF821F9BA4900B4573F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE464CF721F9BA4900B4573F /* btcwatch.app */,
+				CE464D0B21F9BA4C00B4573F /* btcwatchTests.xctest */,
+				CE464D1621F9BA4C00B4573F /* btcwatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE464CF921F9BA4900B4573F /* btcwatch */ = {
+			isa = PBXGroup;
+			children = (
+				CE464CFA21F9BA4900B4573F /* AppDelegate.swift */,
+				CE464CFC21F9BA4900B4573F /* ViewController.swift */,
+				CE464CFE21F9BA4900B4573F /* Main.storyboard */,
+				CE464D0121F9BA4C00B4573F /* Assets.xcassets */,
+				CE464D0321F9BA4C00B4573F /* LaunchScreen.storyboard */,
+				CE464D0621F9BA4C00B4573F /* Info.plist */,
+			);
+			path = btcwatch;
+			sourceTree = "<group>";
+		};
+		CE464D0E21F9BA4C00B4573F /* btcwatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */,
+				CE464D1121F9BA4C00B4573F /* Info.plist */,
+			);
+			path = btcwatchTests;
+			sourceTree = "<group>";
+		};
+		CE464D1921F9BA4C00B4573F /* btcwatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE464D1A21F9BA4C00B4573F /* btcwatchUITests.swift */,
+				CE464D1C21F9BA4C00B4573F /* Info.plist */,
+			);
+			path = btcwatchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE464CF621F9BA4900B4573F /* btcwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE464D1F21F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatch" */;
+			buildPhases = (
+				CE464CF321F9BA4900B4573F /* Sources */,
+				CE464CF421F9BA4900B4573F /* Frameworks */,
+				CE464CF521F9BA4900B4573F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = btcwatch;
+			productName = btcwatch;
+			productReference = CE464CF721F9BA4900B4573F /* btcwatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE464D0A21F9BA4C00B4573F /* btcwatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE464D2221F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatchTests" */;
+			buildPhases = (
+				CE464D0721F9BA4C00B4573F /* Sources */,
+				CE464D0821F9BA4C00B4573F /* Frameworks */,
+				CE464D0921F9BA4C00B4573F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE464D0D21F9BA4C00B4573F /* PBXTargetDependency */,
+			);
+			name = btcwatchTests;
+			productName = btcwatchTests;
+			productReference = CE464D0B21F9BA4C00B4573F /* btcwatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE464D1521F9BA4C00B4573F /* btcwatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE464D2521F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatchUITests" */;
+			buildPhases = (
+				CE464D1221F9BA4C00B4573F /* Sources */,
+				CE464D1321F9BA4C00B4573F /* Frameworks */,
+				CE464D1421F9BA4C00B4573F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE464D1821F9BA4C00B4573F /* PBXTargetDependency */,
+			);
+			name = btcwatchUITests;
+			productName = btcwatchUITests;
+			productReference = CE464D1621F9BA4C00B4573F /* btcwatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE464CEF21F9BA4800B4573F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = MSt;
+				TargetAttributes = {
+					CE464CF621F9BA4900B4573F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CE464D0A21F9BA4C00B4573F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CE464CF621F9BA4900B4573F;
+					};
+					CE464D1521F9BA4C00B4573F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CE464CF621F9BA4900B4573F;
+					};
+				};
+			};
+			buildConfigurationList = CE464CF221F9BA4800B4573F /* Build configuration list for PBXProject "btcwatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE464CEE21F9BA4800B4573F;
+			productRefGroup = CE464CF821F9BA4900B4573F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE464CF621F9BA4900B4573F /* btcwatch */,
+				CE464D0A21F9BA4C00B4573F /* btcwatchTests */,
+				CE464D1521F9BA4C00B4573F /* btcwatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE464CF521F9BA4900B4573F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE464D0521F9BA4C00B4573F /* LaunchScreen.storyboard in Resources */,
+				CE464D0221F9BA4C00B4573F /* Assets.xcassets in Resources */,
+				CE464D0021F9BA4900B4573F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D0921F9BA4C00B4573F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D1421F9BA4C00B4573F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE464CF321F9BA4900B4573F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE464CFD21F9BA4900B4573F /* ViewController.swift in Sources */,
+				CE464CFB21F9BA4900B4573F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D0721F9BA4C00B4573F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE464D1021F9BA4C00B4573F /* btcwatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D1221F9BA4C00B4573F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE464D1B21F9BA4C00B4573F /* btcwatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE464D0D21F9BA4C00B4573F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE464CF621F9BA4900B4573F /* btcwatch */;
+			targetProxy = CE464D0C21F9BA4C00B4573F /* PBXContainerItemProxy */;
+		};
+		CE464D1821F9BA4C00B4573F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE464CF621F9BA4900B4573F /* btcwatch */;
+			targetProxy = CE464D1721F9BA4C00B4573F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE464CFE21F9BA4900B4573F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE464CFF21F9BA4900B4573F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE464D0321F9BA4C00B4573F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE464D0421F9BA4C00B4573F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE464D1D21F9BA4C00B4573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE464D1E21F9BA4C00B4573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE464D2021F9BA4C00B4573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = btcwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE464D2121F9BA4C00B4573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = btcwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE464D2321F9BA4C00B4573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = btcwatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/btcwatch.app/btcwatch";
+			};
+			name = Debug;
+		};
+		CE464D2421F9BA4C00B4573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = btcwatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/btcwatch.app/btcwatch";
+			};
+			name = Release;
+		};
+		CE464D2621F9BA4C00B4573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = btcwatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = btcwatch;
+			};
+			name = Debug;
+		};
+		CE464D2721F9BA4C00B4573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = btcwatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = btcwatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE464CF221F9BA4800B4573F /* Build configuration list for PBXProject "btcwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE464D1D21F9BA4C00B4573F /* Debug */,
+				CE464D1E21F9BA4C00B4573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE464D1F21F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE464D2021F9BA4C00B4573F /* Debug */,
+				CE464D2121F9BA4C00B4573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE464D2221F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE464D2321F9BA4C00B4573F /* Debug */,
+				CE464D2421F9BA4C00B4573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE464D2521F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE464D2621F9BA4C00B4573F /* Debug */,
+				CE464D2721F9BA4C00B4573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE464CEF21F9BA4800B4573F /* Project object */;
+}
