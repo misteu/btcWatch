@@ -1,0 +1,6 @@
+framework module Pods_btcwatchTests {
+  umbrella header "Pods-btcwatchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

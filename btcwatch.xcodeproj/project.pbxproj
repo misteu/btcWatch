@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A04734CDB66F3BF0D1B8E3 /* Pods_btcwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC8636AA4F5784555AF4E54 /* Pods_btcwatchUITests.framework */; };
+		16EFDB7CA77D299CDEF0BDC5 /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BDC8B12469AB3547D48FB2 /* Pods_Watch.framework */; };
+		24EFE377BC2817CBCBBCBAB9 /* Pods_btcwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE107E99C75433C84604AF76 /* Pods_btcwatchTests.framework */; };
 		CE464CFB21F9BA4900B4573F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464CFA21F9BA4900B4573F /* AppDelegate.swift */; };
-		CE464CFD21F9BA4900B4573F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464CFC21F9BA4900B4573F /* ViewController.swift */; };
+		CE464CFD21F9BA4900B4573F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464CFC21F9BA4900B4573F /* MainViewController.swift */; };
 		CE464D0021F9BA4900B4573F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE464CFE21F9BA4900B4573F /* Main.storyboard */; };
 		CE464D0221F9BA4C00B4573F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE464D0121F9BA4C00B4573F /* Assets.xcassets */; };
 		CE464D0521F9BA4C00B4573F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE464D0321F9BA4C00B4573F /* LaunchScreen.storyboard */; };
-		CE464D1021F9BA4C00B4573F /* btcwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */; };
 		CE464D1B21F9BA4C00B4573F /* btcwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D1A21F9BA4C00B4573F /* btcwatchUITests.swift */; };
+		CE464D2E21F9BC4700B4573F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE464D2C21F9BC4700B4573F /* Interface.storyboard */; };
+		CE464D3021F9BC4A00B4573F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE464D2F21F9BC4A00B4573F /* Assets.xcassets */; };
+		CE464D3721F9BC4A00B4573F /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE464D3621F9BC4A00B4573F /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE464D3E21F9BC4A00B4573F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D3D21F9BC4A00B4573F /* ExtensionDelegate.swift */; };
+		CE464D4021F9BC4B00B4573F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE464D3F21F9BC4B00B4573F /* Assets.xcassets */; };
+		CE464D4421F9BC4B00B4573F /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE464D2A21F9BC4700B4573F /* Watch.app */; };
+		CE464D5121F9CCD900B4573F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5021F9CCD900B4573F /* Helper.swift */; };
+		CE464D5221F9CCD900B4573F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5021F9CCD900B4573F /* Helper.swift */; };
+		CE464D5621F9D6BC00B4573F /* BtcRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5521F9D6BC00B4573F /* BtcRateTableViewCell.swift */; };
+		CEEA445321FB87EA00F44A8A /* btcwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */; };
+		D4BC8FF645A7A1BEB864511F /* Pods_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB652F312A10D93B94D8D75D /* Pods_Watch_Extension.framework */; };
+		EDEA61158C6BC7B0A47E2834 /* Pods_btcwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1748F94A49EA117500655F /* Pods_btcwatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +45,64 @@
 			remoteGlobalIDString = CE464CF621F9BA4900B4573F;
 			remoteInfo = btcwatch;
 		};
+		CE464D3821F9BC4A00B4573F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE464CEF21F9BA4800B4573F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE464D3521F9BC4A00B4573F;
+			remoteInfo = "Watch Extension";
+		};
+		CE464D4221F9BC4B00B4573F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE464CEF21F9BA4800B4573F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE464D2921F9BC4700B4573F;
+			remoteInfo = Watch;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE464D4821F9BC4B00B4573F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE464D3721F9BC4A00B4573F /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D4C21F9BC4B00B4573F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CE464D4421F9BC4B00B4573F /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01BDC8B12469AB3547D48FB2 /* Pods_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B8587708135F5D6A4E3988 /* Pods-btcwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcwatchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-btcwatchTests/Pods-btcwatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		17EBFD05130A35FE6664053B /* Pods-btcwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcwatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btcwatch/Pods-btcwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		3F421E66E0C2796B3BDD203B /* Pods-Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		59ADA540CD4175092E289BF2 /* Pods-btcwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcwatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-btcwatch/Pods-btcwatch.release.xcconfig"; sourceTree = "<group>"; };
+		77A9439B28B1D9990D4348DB /* Pods-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		7B900117BBFA4B9A03AFBB7D /* Pods-btcwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcwatchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-btcwatchUITests/Pods-btcwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CDE6668D798F7425F4CD1B0 /* Pods-btcwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcwatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btcwatchTests/Pods-btcwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86EDE8B88FD9AB7D9749E723 /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
+		8DC8636AA4F5784555AF4E54 /* Pods_btcwatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcwatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		946F65EB31DE2142531FF8CD /* Pods-btcwatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btcwatchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-btcwatchUITests/Pods-btcwatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB1748F94A49EA117500655F /* Pods_btcwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB652F312A10D93B94D8D75D /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE464CF721F9BA4900B4573F /* btcwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btcwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE464CFA21F9BA4900B4573F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE464CFC21F9BA4900B4573F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE464CFC21F9BA4900B4573F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE464CFF21F9BA4900B4573F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE464D0121F9BA4C00B4573F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE464D0421F9BA4C00B4573F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,13 +113,34 @@
 		CE464D1621F9BA4C00B4573F /* btcwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btcwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE464D1A21F9BA4C00B4573F /* btcwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btcwatchUITests.swift; sourceTree = "<group>"; };
 		CE464D1C21F9BA4C00B4573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE464D2A21F9BC4700B4573F /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE464D2D21F9BC4700B4573F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CE464D2F21F9BC4A00B4573F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE464D3121F9BC4A00B4573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE464D3621F9BC4A00B4573F /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE464D3D21F9BC4A00B4573F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CE464D3F21F9BC4B00B4573F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE464D4121F9BC4B00B4573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE464D5021F9CCD900B4573F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		CE464D5521F9D6BC00B4573F /* BtcRateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcRateTableViewCell.swift; sourceTree = "<group>"; };
+		DA47B8660493AFA5354F8A12 /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		FE107E99C75433C84604AF76 /* Pods_btcwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9AF9D4E44FB3F26262C1681B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EFDB7CA77D299CDEF0BDC5 /* Pods_Watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE464CF421F9BA4900B4573F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEA61158C6BC7B0A47E2834 /* Pods_btcwatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EFE377BC2817CBCBBCBAB9 /* Pods_btcwatchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +156,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A04734CDB66F3BF0D1B8E3 /* Pods_btcwatchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D3321F9BC4A00B4573F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BC8FF645A7A1BEB864511F /* Pods_Watch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18796E07CBACF28A1353699E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01BDC8B12469AB3547D48FB2 /* Pods_Watch.framework */,
+				AB652F312A10D93B94D8D75D /* Pods_Watch_Extension.framework */,
+				AB1748F94A49EA117500655F /* Pods_btcwatch.framework */,
+				FE107E99C75433C84604AF76 /* Pods_btcwatchTests.framework */,
+				8DC8636AA4F5784555AF4E54 /* Pods_btcwatchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE464CEE21F9BA4800B4573F = {
 			isa = PBXGroup;
 			children = (
+				CE464D5421F9CCFE00B4573F /* Shared */,
 				CE464CF921F9BA4900B4573F /* btcwatch */,
 				CE464D0E21F9BA4C00B4573F /* btcwatchTests */,
 				CE464D1921F9BA4C00B4573F /* btcwatchUITests */,
+				CE464D2B21F9BC4700B4573F /* Watch */,
+				CE464D3A21F9BC4A00B4573F /* Watch Extension */,
 				CE464CF821F9BA4900B4573F /* Products */,
+				ECC413B46CC96CBAFEA48995 /* Pods */,
+				18796E07CBACF28A1353699E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +204,8 @@
 				CE464CF721F9BA4900B4573F /* btcwatch.app */,
 				CE464D0B21F9BA4C00B4573F /* btcwatchTests.xctest */,
 				CE464D1621F9BA4C00B4573F /* btcwatchUITests.xctest */,
+				CE464D2A21F9BC4700B4573F /* Watch.app */,
+				CE464D3621F9BC4A00B4573F /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				CE464CFA21F9BA4900B4573F /* AppDelegate.swift */,
-				CE464CFC21F9BA4900B4573F /* ViewController.swift */,
+				CE464CFC21F9BA4900B4573F /* MainViewController.swift */,
+				CE464D5521F9D6BC00B4573F /* BtcRateTableViewCell.swift */,
 				CE464CFE21F9BA4900B4573F /* Main.storyboard */,
 				CE464D0121F9BA4C00B4573F /* Assets.xcassets */,
 				CE464D0321F9BA4C00B4573F /* LaunchScreen.storyboard */,
@@ -125,6 +242,51 @@
 			path = btcwatchUITests;
 			sourceTree = "<group>";
 		};
+		CE464D2B21F9BC4700B4573F /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				CE464D2C21F9BC4700B4573F /* Interface.storyboard */,
+				CE464D2F21F9BC4A00B4573F /* Assets.xcassets */,
+				CE464D3121F9BC4A00B4573F /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		CE464D3A21F9BC4A00B4573F /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE464D3D21F9BC4A00B4573F /* ExtensionDelegate.swift */,
+				CE464D3F21F9BC4B00B4573F /* Assets.xcassets */,
+				CE464D4121F9BC4B00B4573F /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		CE464D5421F9CCFE00B4573F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CE464D5021F9CCD900B4573F /* Helper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ECC413B46CC96CBAFEA48995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA47B8660493AFA5354F8A12 /* Pods-Watch.debug.xcconfig */,
+				86EDE8B88FD9AB7D9749E723 /* Pods-Watch.release.xcconfig */,
+				3F421E66E0C2796B3BDD203B /* Pods-Watch Extension.debug.xcconfig */,
+				77A9439B28B1D9990D4348DB /* Pods-Watch Extension.release.xcconfig */,
+				17EBFD05130A35FE6664053B /* Pods-btcwatch.debug.xcconfig */,
+				59ADA540CD4175092E289BF2 /* Pods-btcwatch.release.xcconfig */,
+				7CDE6668D798F7425F4CD1B0 /* Pods-btcwatchTests.debug.xcconfig */,
+				07B8587708135F5D6A4E3988 /* Pods-btcwatchTests.release.xcconfig */,
+				946F65EB31DE2142531FF8CD /* Pods-btcwatchUITests.debug.xcconfig */,
+				7B900117BBFA4B9A03AFBB7D /* Pods-btcwatchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +294,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE464D1F21F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatch" */;
 			buildPhases = (
+				0B86F4AB79F005BD170E6FB8 /* [CP] Check Pods Manifest.lock */,
 				CE464CF321F9BA4900B4573F /* Sources */,
 				CE464CF421F9BA4900B4573F /* Frameworks */,
 				CE464CF521F9BA4900B4573F /* Resources */,
+				CE464D4C21F9BC4B00B4573F /* Embed Watch Content */,
+				5FDAD5EF6E0BA49AF71B9A70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE464D4321F9BC4B00B4573F /* PBXTargetDependency */,
 			);
 			name = btcwatch;
 			productName = btcwatch;
@@ -149,6 +315,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE464D2221F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatchTests" */;
 			buildPhases = (
+				E04987E92310B1BA47CD0F23 /* [CP] Check Pods Manifest.lock */,
 				CE464D0721F9BA4C00B4573F /* Sources */,
 				CE464D0821F9BA4C00B4573F /* Frameworks */,
 				CE464D0921F9BA4C00B4573F /* Resources */,
@@ -167,6 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE464D2521F9BA4C00B4573F /* Build configuration list for PBXNativeTarget "btcwatchUITests" */;
 			buildPhases = (
+				95C5884E6C7EAF095073E521 /* [CP] Check Pods Manifest.lock */,
 				CE464D1221F9BA4C00B4573F /* Sources */,
 				CE464D1321F9BA4C00B4573F /* Frameworks */,
 				CE464D1421F9BA4C00B4573F /* Resources */,
@@ -180,6 +348,44 @@
 			productName = btcwatchUITests;
 			productReference = CE464D1621F9BA4C00B4573F /* btcwatchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CE464D2921F9BC4700B4573F /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE464D4921F9BC4B00B4573F /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				0C4AE29A6E589A806E5C5B1C /* [CP] Check Pods Manifest.lock */,
+				CE464D2821F9BC4700B4573F /* Resources */,
+				CE464D4821F9BC4B00B4573F /* Embed App Extensions */,
+				9AF9D4E44FB3F26262C1681B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE464D3921F9BC4A00B4573F /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = CE464D2A21F9BC4700B4573F /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CE464D3521F9BC4A00B4573F /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE464D4521F9BC4B00B4573F /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				07B0DF4E7678A55D4A2A5FB1 /* [CP] Check Pods Manifest.lock */,
+				CE464D3221F9BC4A00B4573F /* Sources */,
+				CE464D3321F9BC4A00B4573F /* Frameworks */,
+				CE464D3421F9BC4A00B4573F /* Resources */,
+				403396308BAB054C27F987CF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = CE464D3621F9BC4A00B4573F /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,6 +408,12 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = CE464CF621F9BA4900B4573F;
 					};
+					CE464D2921F9BC4700B4573F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CE464D3521F9BC4A00B4573F = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = CE464CF221F9BA4800B4573F /* Build configuration list for PBXProject "btcwatch" */;
@@ -220,6 +432,8 @@
 				CE464CF621F9BA4900B4573F /* btcwatch */,
 				CE464D0A21F9BA4C00B4573F /* btcwatchTests */,
 				CE464D1521F9BA4C00B4573F /* btcwatchUITests */,
+				CE464D2921F9BC4700B4573F /* Watch */,
+				CE464D3521F9BC4A00B4573F /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,15 +463,163 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE464D2821F9BC4700B4573F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE464D3021F9BC4A00B4573F /* Assets.xcassets in Resources */,
+				CE464D2E21F9BC4700B4573F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D3421F9BC4A00B4573F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE464D4021F9BC4B00B4573F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07B0DF4E7678A55D4A2A5FB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B86F4AB79F005BD170E6FB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btcwatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C4AE29A6E589A806E5C5B1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		403396308BAB054C27F987CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FDAD5EF6E0BA49AF71B9A70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-btcwatch/Pods-btcwatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-btcwatch/Pods-btcwatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C5884E6C7EAF095073E521 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btcwatchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E04987E92310B1BA47CD0F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btcwatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE464CF321F9BA4900B4573F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE464CFD21F9BA4900B4573F /* ViewController.swift in Sources */,
+				CE464CFD21F9BA4900B4573F /* MainViewController.swift in Sources */,
 				CE464CFB21F9BA4900B4573F /* AppDelegate.swift in Sources */,
+				CE464D5121F9CCD900B4573F /* Helper.swift in Sources */,
+				CE464D5621F9D6BC00B4573F /* BtcRateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE464D1021F9BA4C00B4573F /* btcwatchTests.swift in Sources */,
+				CEEA445321FB87EA00F44A8A /* btcwatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +636,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE464D1B21F9BA4C00B4573F /* btcwatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE464D3221F9BC4A00B4573F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE464D3E21F9BC4A00B4573F /* ExtensionDelegate.swift in Sources */,
+				CE464D5221F9CCD900B4573F /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +660,16 @@
 			isa = PBXTargetDependency;
 			target = CE464CF621F9BA4900B4573F /* btcwatch */;
 			targetProxy = CE464D1721F9BA4C00B4573F /* PBXContainerItemProxy */;
+		};
+		CE464D3921F9BC4A00B4573F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE464D3521F9BC4A00B4573F /* Watch Extension */;
+			targetProxy = CE464D3821F9BC4A00B4573F /* PBXContainerItemProxy */;
+		};
+		CE464D4321F9BC4B00B4573F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE464D2921F9BC4700B4573F /* Watch */;
+			targetProxy = CE464D4221F9BC4B00B4573F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +688,14 @@
 				CE464D0421F9BA4C00B4573F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE464D2C21F9BC4700B4573F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE464D2D21F9BC4700B4573F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,8 +819,10 @@
 		};
 		CE464D2021F9BA4C00B4573F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17EBFD05130A35FE6664053B /* Pods-btcwatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6GZ7F39AP;
 				INFOPLIST_FILE = btcwatch/Info.plist;
@@ -441,15 +832,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE464D2121F9BA4C00B4573F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59ADA540CD4175092E289BF2 /* Pods-btcwatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6GZ7F39AP;
 				INFOPLIST_FILE = btcwatch/Info.plist;
@@ -459,13 +853,15 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		CE464D2321F9BA4C00B4573F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CDE6668D798F7425F4CD1B0 /* Pods-btcwatchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +883,7 @@
 		};
 		CE464D2421F9BA4C00B4573F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B8587708135F5D6A4E3988 /* Pods-btcwatchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +905,7 @@
 		};
 		CE464D2621F9BA4C00B4573F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946F65EB31DE2142531FF8CD /* Pods-btcwatchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +926,7 @@
 		};
 		CE464D2721F9BA4C00B4573F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B900117BBFA4B9A03AFBB7D /* Pods-btcwatchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +942,94 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = btcwatch;
+			};
+			name = Release;
+		};
+		CE464D4621F9BC4B00B4573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F421E66E0C2796B3BDD203B /* Pods-Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		CE464D4721F9BC4B00B4573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A9439B28B1D9990D4348DB /* Pods-Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		CE464D4A21F9BC4B00B4573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA47B8660493AFA5354F8A12 /* Pods-Watch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		CE464D4B21F9BC4B00B4573F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EDE8B88FD9AB7D9749E723 /* Pods-Watch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6GZ7F39AP;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = st.mic.btcwatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -581,6 +1068,24 @@
 			buildConfigurations = (
 				CE464D2621F9BA4C00B4573F /* Debug */,
 				CE464D2721F9BA4C00B4573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE464D4521F9BC4B00B4573F /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE464D4621F9BC4B00B4573F /* Debug */,
+				CE464D4721F9BC4B00B4573F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE464D4921F9BC4B00B4573F /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE464D4A21F9BC4B00B4573F /* Debug */,
+				CE464D4B21F9BC4B00B4573F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

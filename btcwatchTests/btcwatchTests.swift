@@ -18,17 +18,53 @@ class btcwatchTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+  
+  func testDateToStringExtension() {
+    
+    //test only for yyyy-MM-dd format needed for API-Endpoint
+    
+    // test with reference date
+    XCTAssertEqual(Date(timeIntervalSinceReferenceDate: 0).toString(dateFormat: "yyyy-MM-dd"), "2001-01-01")
+    
+    // test with 1970
+    XCTAssertEqual(Date(timeIntervalSince1970: 0).toString(dateFormat: "yyyy-MM-dd"), "1970-01-01")
+    
+    // test with two days after reference date
+    XCTAssertEqual(Date(timeIntervalSinceReferenceDate: 60*60*24*2).toString(dateFormat: "yyyy-MM-dd"), "2001-01-03")
+    
+    // test with two days before reference date
+    XCTAssertEqual(Date(timeIntervalSinceReferenceDate: -60*60*24*2).toString(dateFormat: "yyyy-MM-dd"), "2000-12-30")
+    
+  }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+  
+  func testDateDaysBackFromNowExtension() {
+    
+    // test for today
+    XCTAssertEqual(Date().toString(dateFormat: "yyyy-MM-dd"), Date().daysBackFromNow(days: 0).toString(dateFormat: "yyyy-MM-dd"))
+  
+    // test for 14 days back from now
+    let twoWeeksBackInSeconds = -60.0*60*24*14
+    XCTAssertEqual(Date(timeIntervalSinceNow: twoWeeksBackInSeconds).toString(dateFormat: "yyyy-MM-dd"), Date().daysBackFromNow(days: 14).toString(dateFormat: "yyyy-MM-dd"))
+    
+  }
+  
+  func testApiEndPointForHistoricalBpiRatesFromTodayTo() {
+    
+    // test from today 14 days back
+    let today = Date().toString(dateFormat: "yyyy-MM-dd")
+    let fourteenDaysBack = Date().daysBackFromNow(days: 14)
+    let fourteenDaysBackStr = fourteenDaysBack.toString(dateFormat: "yyyy-MM-dd")
+    
+    XCTAssertEqual("https://api.coindesk.com/v1/bpi/historical/close.json?start=\(fourteenDaysBackStr)&end=\(today)", Helper.getApiEndpointForBpiRatesFrom(start: fourteenDaysBack, toEnd: Date()))
+    
+  }
+  
+  func testBpiRateRequests() {
+    
+    let group = DispatchGroup()
+    group.enter()
+    
+  }
 
 }

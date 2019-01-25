@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4fh-2l-wnv">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="UXF-gm-mjF">
+            <objects>
+                <controller hidesWhenLoading="NO" id="4fh-2l-wnv">
+                    <items>
+                        <label alignment="left" text="BLABALB Test" id="L3z-AB-XOk"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="109" y="149"/>
+        </scene>
+    </scenes>
+</document>
