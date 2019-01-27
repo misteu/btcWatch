@@ -9,16 +9,58 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Bpi Interface Controller-->
         <scene sceneID="UXF-gm-mjF">
             <objects>
-                <controller hidesWhenLoading="NO" id="4fh-2l-wnv">
+                <controller hidesWhenLoading="NO" id="4fh-2l-wnv" customClass="BpiInterfaceController" customModule="Watch_Extension">
                     <items>
-                        <label alignment="left" text="BLABALB Test" id="L3z-AB-XOk"/>
+                        <group width="1" alignment="left" layout="vertical" spacing="8" id="IXy-rQ-LF7">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="0dq-dL-GRZ">
+                                    <items>
+                                        <label alignment="left" text="Aktueller EUR/BPI Kurs:" minimumScaleFactor="0.5" id="RVP-1E-ZPP">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="---" textAlignment="center" minimumScaleFactor="0.5" id="Ptm-lc-UcV">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="--- EUR/BPI" textAlignment="center" id="9r0-FV-dEd"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="PYe-mO-0sa">
+                                    <items>
+                                        <label alignment="left" text="historische Kurse (14 Tage):" minimumScaleFactor="0.5" id="dGd-7j-Oea">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <table alignment="left" id="wzh-Ag-VoW">
+                                            <items>
+                                                <tableRow identifier="BpiRow" id="zZw-ad-8By" customClass="BpiRowController" customModule="Watch_Extension">
+                                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="geE-zY-7z9">
+                                                        <items>
+                                                            <label width="1" alignment="left" text="---" textAlignment="left" id="2eq-f1-GAQ"/>
+                                                            <label width="1" alignment="left" text="--- EUR/BPI" textAlignment="right" id="fdP-yO-MMr"/>
+                                                        </items>
+                                                    </group>
+                                                    <connections>
+                                                        <outlet property="dateLabel" destination="2eq-f1-GAQ" id="LZ9-xr-Krg"/>
+                                                        <outlet property="priceLabel" destination="fdP-yO-MMr" id="Obt-Nc-cDv"/>
+                                                    </connections>
+                                                </tableRow>
+                                            </items>
+                                        </table>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="bpiCurrentPriceDateLabel" destination="Ptm-lc-UcV" id="g60-GH-iMS"/>
+                        <outlet property="bpiCurrentPriceLabel" destination="9r0-FV-dEd" id="fak-MX-NtQ"/>
+                        <outlet property="bpiTable" destination="wzh-Ag-VoW" id="S22-pt-b3O"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="109" y="149"/>
+            <point key="canvasLocation" x="108.97435897435898" y="148.64102564102566"/>
         </scene>
     </scenes>
 </document>

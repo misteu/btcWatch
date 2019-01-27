@@ -22,10 +22,22 @@
 		CE464D3E21F9BC4A00B4573F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D3D21F9BC4A00B4573F /* ExtensionDelegate.swift */; };
 		CE464D4021F9BC4B00B4573F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE464D3F21F9BC4B00B4573F /* Assets.xcassets */; };
 		CE464D4421F9BC4B00B4573F /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE464D2A21F9BC4700B4573F /* Watch.app */; };
-		CE464D5121F9CCD900B4573F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5021F9CCD900B4573F /* Helper.swift */; };
-		CE464D5221F9CCD900B4573F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5021F9CCD900B4573F /* Helper.swift */; };
+		CE464D5121F9CCD900B4573F /* RequestAndDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5021F9CCD900B4573F /* RequestAndDecode.swift */; };
+		CE464D5221F9CCD900B4573F /* RequestAndDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5021F9CCD900B4573F /* RequestAndDecode.swift */; };
 		CE464D5621F9D6BC00B4573F /* BtcRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5521F9D6BC00B4573F /* BtcRateTableViewCell.swift */; };
+		CE7C780F21FE0DDC008D22DB /* BpiInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C780E21FE0DDC008D22DB /* BpiInterfaceController.swift */; };
+		CE7C781221FE1DF5008D22DB /* BpiRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C781121FE1DF5008D22DB /* BpiRowController.swift */; };
 		CEEA445321FB87EA00F44A8A /* btcwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */; };
+		CEEA445521FD00A900F44A8A /* BpiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445421FD00A800F44A8A /* BpiData.swift */; };
+		CEEA445621FD00A900F44A8A /* BpiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445421FD00A800F44A8A /* BpiData.swift */; };
+		CEEA445821FD17F200F44A8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445721FD17F200F44A8A /* Extensions.swift */; };
+		CEEA445921FD17F200F44A8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445721FD17F200F44A8A /* Extensions.swift */; };
+		CEEA445B21FD18E300F44A8A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445A21FD18E300F44A8A /* API.swift */; };
+		CEEA445C21FD18E300F44A8A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445A21FD18E300F44A8A /* API.swift */; };
+		CEEA445E21FD1B6000F44A8A /* BpiDataHistoric.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445D21FD1B6000F44A8A /* BpiDataHistoric.swift */; };
+		CEEA445F21FD1B6000F44A8A /* BpiDataHistoric.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445D21FD1B6000F44A8A /* BpiDataHistoric.swift */; };
+		CEEA446121FD1E5A00F44A8A /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA446021FD1E5A00F44A8A /* UserDefaultsKeys.swift */; };
+		CEEA446221FD1E5A00F44A8A /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA446021FD1E5A00F44A8A /* UserDefaultsKeys.swift */; };
 		D4BC8FF645A7A1BEB864511F /* Pods_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB652F312A10D93B94D8D75D /* Pods_Watch_Extension.framework */; };
 		EDEA61158C6BC7B0A47E2834 /* Pods_btcwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1748F94A49EA117500655F /* Pods_btcwatch.framework */; };
 /* End PBXBuildFile section */
@@ -121,8 +133,17 @@
 		CE464D3D21F9BC4A00B4573F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		CE464D3F21F9BC4B00B4573F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE464D4121F9BC4B00B4573F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE464D5021F9CCD900B4573F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		CE464D5021F9CCD900B4573F /* RequestAndDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAndDecode.swift; sourceTree = "<group>"; };
 		CE464D5521F9D6BC00B4573F /* BtcRateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcRateTableViewCell.swift; sourceTree = "<group>"; };
+		CE7C780E21FE0DDC008D22DB /* BpiInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpiInterfaceController.swift; sourceTree = "<group>"; };
+		CE7C781121FE1DF5008D22DB /* BpiRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpiRowController.swift; sourceTree = "<group>"; };
+		CEE4150821FE33E40083296A /* btcwatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = btcwatch.entitlements; sourceTree = "<group>"; };
+		CEE4150921FE34290083296A /* Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch Extension.entitlements"; sourceTree = "<group>"; };
+		CEEA445421FD00A800F44A8A /* BpiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpiData.swift; sourceTree = "<group>"; };
+		CEEA445721FD17F200F44A8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CEEA445A21FD18E300F44A8A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CEEA445D21FD1B6000F44A8A /* BpiDataHistoric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpiDataHistoric.swift; sourceTree = "<group>"; };
+		CEEA446021FD1E5A00F44A8A /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		DA47B8660493AFA5354F8A12 /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		FE107E99C75433C84604AF76 /* Pods_btcwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btcwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -213,6 +234,7 @@
 		CE464CF921F9BA4900B4573F /* btcwatch */ = {
 			isa = PBXGroup;
 			children = (
+				CEE4150821FE33E40083296A /* btcwatch.entitlements */,
 				CE464CFA21F9BA4900B4573F /* AppDelegate.swift */,
 				CE464CFC21F9BA4900B4573F /* MainViewController.swift */,
 				CE464D5521F9D6BC00B4573F /* BtcRateTableViewCell.swift */,
@@ -255,9 +277,12 @@
 		CE464D3A21F9BC4A00B4573F /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CEE4150921FE34290083296A /* Watch Extension.entitlements */,
 				CE464D3D21F9BC4A00B4573F /* ExtensionDelegate.swift */,
 				CE464D3F21F9BC4B00B4573F /* Assets.xcassets */,
 				CE464D4121F9BC4B00B4573F /* Info.plist */,
+				CE7C780E21FE0DDC008D22DB /* BpiInterfaceController.swift */,
+				CE7C781121FE1DF5008D22DB /* BpiRowController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -265,7 +290,12 @@
 		CE464D5421F9CCFE00B4573F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				CE464D5021F9CCD900B4573F /* Helper.swift */,
+				CE464D5021F9CCD900B4573F /* RequestAndDecode.swift */,
+				CEEA445421FD00A800F44A8A /* BpiData.swift */,
+				CEEA445D21FD1B6000F44A8A /* BpiDataHistoric.swift */,
+				CEEA445721FD17F200F44A8A /* Extensions.swift */,
+				CEEA446021FD1E5A00F44A8A /* UserDefaultsKeys.swift */,
+				CEEA445A21FD18E300F44A8A /* API.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -399,6 +429,11 @@
 				TargetAttributes = {
 					CE464CF621F9BA4900B4573F = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CE464D0A21F9BA4C00B4573F = {
 						CreatedOnToolsVersion = 10.1;
@@ -413,6 +448,11 @@
 					};
 					CE464D3521F9BC4A00B4573F = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -617,9 +657,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE464CFD21F9BA4900B4573F /* MainViewController.swift in Sources */,
+				CEEA445821FD17F200F44A8A /* Extensions.swift in Sources */,
+				CEEA445E21FD1B6000F44A8A /* BpiDataHistoric.swift in Sources */,
+				CEEA445521FD00A900F44A8A /* BpiData.swift in Sources */,
+				CEEA446121FD1E5A00F44A8A /* UserDefaultsKeys.swift in Sources */,
 				CE464CFB21F9BA4900B4573F /* AppDelegate.swift in Sources */,
-				CE464D5121F9CCD900B4573F /* Helper.swift in Sources */,
+				CE464D5121F9CCD900B4573F /* RequestAndDecode.swift in Sources */,
 				CE464D5621F9D6BC00B4573F /* BtcRateTableViewCell.swift in Sources */,
+				CEEA445B21FD18E300F44A8A /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,8 +688,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEA445F21FD1B6000F44A8A /* BpiDataHistoric.swift in Sources */,
+				CEEA446221FD1E5A00F44A8A /* UserDefaultsKeys.swift in Sources */,
+				CEEA445621FD00A900F44A8A /* BpiData.swift in Sources */,
+				CE7C781221FE1DF5008D22DB /* BpiRowController.swift in Sources */,
 				CE464D3E21F9BC4A00B4573F /* ExtensionDelegate.swift in Sources */,
-				CE464D5221F9CCD900B4573F /* Helper.swift in Sources */,
+				CE464D5221F9CCD900B4573F /* RequestAndDecode.swift in Sources */,
+				CEEA445921FD17F200F44A8A /* Extensions.swift in Sources */,
+				CEEA445C21FD18E300F44A8A /* API.swift in Sources */,
+				CE7C780F21FE0DDC008D22DB /* BpiInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +874,7 @@
 			baseConfigurationReference = 17EBFD05130A35FE6664053B /* Pods-btcwatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = btcwatch/btcwatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6GZ7F39AP;
@@ -843,6 +896,7 @@
 			baseConfigurationReference = 59ADA540CD4175092E289BF2 /* Pods-btcwatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = btcwatch/btcwatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6GZ7F39AP;
@@ -950,6 +1004,7 @@
 			baseConfigurationReference = 3F421E66E0C2796B3BDD203B /* Pods-Watch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Watch Extension/Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6GZ7F39AP;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
@@ -973,6 +1028,7 @@
 			baseConfigurationReference = 77A9439B28B1D9990D4348DB /* Pods-Watch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Watch Extension/Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6GZ7F39AP;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";

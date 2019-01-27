@@ -11,7 +11,6 @@ import Alamofire
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
-  
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var currentRate: UILabel!
   
@@ -20,91 +19,78 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     checkForCachedDataAndUpdateUI()
     
-    // do async requests
-    requestCurrentRateAndUpdateUI()
+    requestCurrentPriceAndUpdateUI()
     requestHistoricRatesAndUpdateUI(daysBackFromNow: 14)
     
-    Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(self.requestCurrentRateAndUpdateUI), userInfo: nil, repeats: true)
-    
+    // refresh current price, coindesk has max. one new price per minute
+    Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(self.requestCurrentPriceAndUpdateUI), userInfo: nil, repeats: true)
   }
   
-  @objc func requestCurrentRateAndUpdateUI() {
+  /// update UI after request to coindesk-API and JSON decoding with current bpi price
+  @objc func requestCurrentPriceAndUpdateUI() {
     let group = DispatchGroup()
     group.enter()
     
     DispatchQueue.main.async {
-      Helper.requestCurrentBpiEurRate(group: group)
+      RequestAndDecode.currentBpiEurPrice(group: group)
     }
     
     group.notify(queue: .main) {
-      print("ready")
       
-      if let dateAndRate = Helper.currentDateAndRate.popFirst() {
-        self.currentRate.text = "Minutengenauer Kurs:\n\(dateAndRate.key)\n \(dateAndRate.value) EUR/BTC"
+      //use decoded Json response for UI updates
+      if let bpi = BpiData.shared {
+        self.currentRate.text = "Minutengenauer Kurs:\n\(bpi.time.updated)\n \(bpi.exchangeRate.eur.rate) EUR/BTC"
       }
     }
   }
   
+  /// update UI after request to coindesk-API and JSON decoding with historic bpi data
   func requestHistoricRatesAndUpdateUI(daysBackFromNow: Int) {
     let group = DispatchGroup()
     group.enter()
     
     DispatchQueue.main.async {
-      Helper.requestLastBpiRatesFor(days: daysBackFromNow, group: group)
+      RequestAndDecode.lastBpiPricesFor(days: daysBackFromNow, group: group)
     }
     
     group.notify(queue: .main) {
-      print("ready")
-      
-      print(Helper.newestBpiData)
       self.tableView.reloadData()
     }
   }
   
+  /// trys to decode cached JSON (in shared UserDefaults), updates UI if successful
   func checkForCachedDataAndUpdateUI() {
     
-    // load old rate data if there
-    if let cachedBpiData = Helper.getCachedBpiResponse() {
-      Helper.newestBpiData = cachedBpiData.sorted(by: { $0.key > $1.key })
+    // init retrieves cached data (if available) and decodes it globally accessible
+    if BpiDataHistoric().decoded != nil {
       self.tableView.reloadData()
     }
     
-    // get cached Rate if there
-    if let cachedRateDict = UserDefaults.standard.dictionary(forKey: Helper.UserDefaultKeys.cachedLastRate) {
-      var cached = cachedRateDict
-      if let cachedRate = cached.popFirst() {
-        self.currentRate.text = "Minutengenauer Kurs:\n\(cachedRate.key)\n \(cachedRate.value) EUR/BTC"
-      }
+    if let cached = BpiData().decoded {
+      self.currentRate.text = "Minutengenauer Kurs:\n\(cached.time.updated)\n \(cached.exchangeRate.eur.rate) EUR/BTC"
     }
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-      if Helper.newestBpiData.count > 0 {
-        return Helper.newestBpiData.count
-      }
+    if let bpiRates = BpiDataHistoric.sorted, bpiRates.count > 0{
+      return bpiRates.count
+    }
     return 0
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    if let cell = tableView.dequeueReusableCell(withIdentifier: Helper.bpiRateCell) as? BtcRateTableViewCell {
+    if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? BtcRateTableViewCell {
       
-      let bpiData = Helper.newestBpiData
-      if bpiData.count > 0 {
+      if let bpiRates = BpiDataHistoric.sorted, bpiRates.count > 0{
         
-          let date = bpiData[indexPath.item].0
-          let rate = bpiData[indexPath.item].1
-          
-          cell.date.text = date
-          cell.exchangeRate.text = "\(rate) EUR/BTC"
+        cell.date.text = bpiRates[indexPath.item].0
+        cell.exchangeRate.text = "\(bpiRates[indexPath.item].1) EUR/BPI"
         
       }
-      
       return cell
     }
     return UITableViewCell.init()
   }
-  
 }
-

@@ -45,16 +45,16 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wj1-mx-Ug7">
-                                                            <rect key="frame" x="8" y="8" width="343" height="27.5"/>
+                                                            <rect key="frame" x="15" y="11" width="329" height="22"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZ5-zc-AOy">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="77.5" height="27.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="74" height="22"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="exchangeRate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhM-qJ-M9O">
-                                                                    <rect key="frame" x="87.5" y="0.0" width="255.5" height="27.5"/>
+                                                                    <rect key="frame" x="84" y="0.0" width="245" height="22"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -81,10 +81,6 @@
                                         </connections>
                                     </tableView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="IVJ-zq-WCn" firstAttribute="width" secondItem="WbE-SM-H4p" secondAttribute="width" id="2o7-SI-Apl"/>
-                                    <constraint firstItem="kLo-Mg-mBg" firstAttribute="width" secondItem="WbE-SM-H4p" secondAttribute="width" id="T1B-zd-reL"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
