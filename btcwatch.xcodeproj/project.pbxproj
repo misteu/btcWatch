@@ -27,7 +27,9 @@
 		CE464D5621F9D6BC00B4573F /* BtcRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D5521F9D6BC00B4573F /* BtcRateTableViewCell.swift */; };
 		CE7C780F21FE0DDC008D22DB /* BpiInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C780E21FE0DDC008D22DB /* BpiInterfaceController.swift */; };
 		CE7C781221FE1DF5008D22DB /* BpiRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C781121FE1DF5008D22DB /* BpiRowController.swift */; };
-		CEEA445321FB87EA00F44A8A /* btcwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */; };
+		CEE4150C21FE688F0083296A /* btcwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */; };
+		CEE4151221FE78090083296A /* testJsonBpi.json in Resources */ = {isa = PBXBuildFile; fileRef = CEE4150D21FE706E0083296A /* testJsonBpi.json */; };
+		CEE4151321FE780D0083296A /* testJsonBpiHistoric.json in Resources */ = {isa = PBXBuildFile; fileRef = CEE4150F21FE70900083296A /* testJsonBpiHistoric.json */; };
 		CEEA445521FD00A900F44A8A /* BpiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445421FD00A800F44A8A /* BpiData.swift */; };
 		CEEA445621FD00A900F44A8A /* BpiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445421FD00A800F44A8A /* BpiData.swift */; };
 		CEEA445821FD17F200F44A8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA445721FD17F200F44A8A /* Extensions.swift */; };
@@ -139,6 +141,8 @@
 		CE7C781121FE1DF5008D22DB /* BpiRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpiRowController.swift; sourceTree = "<group>"; };
 		CEE4150821FE33E40083296A /* btcwatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = btcwatch.entitlements; sourceTree = "<group>"; };
 		CEE4150921FE34290083296A /* Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch Extension.entitlements"; sourceTree = "<group>"; };
+		CEE4150D21FE706E0083296A /* testJsonBpi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testJsonBpi.json; sourceTree = "<group>"; };
+		CEE4150F21FE70900083296A /* testJsonBpiHistoric.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testJsonBpiHistoric.json; sourceTree = "<group>"; };
 		CEEA445421FD00A800F44A8A /* BpiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpiData.swift; sourceTree = "<group>"; };
 		CEEA445721FD17F200F44A8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CEEA445A21FD18E300F44A8A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 		CE464D0E21F9BA4C00B4573F /* btcwatchTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEE4150D21FE706E0083296A /* testJsonBpi.json */,
+				CEE4150F21FE70900083296A /* testJsonBpiHistoric.json */,
 				CE464D0F21F9BA4C00B4573F /* btcwatchTests.swift */,
 				CE464D1121F9BA4C00B4573F /* Info.plist */,
 			);
@@ -484,8 +490,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE464D0521F9BA4C00B4573F /* LaunchScreen.storyboard in Resources */,
+				CEE4151221FE78090083296A /* testJsonBpi.json in Resources */,
 				CE464D0221F9BA4C00B4573F /* Assets.xcassets in Resources */,
 				CE464D0021F9BA4900B4573F /* Main.storyboard in Resources */,
+				CEE4151321FE780D0083296A /* testJsonBpiHistoric.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +680,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEA445321FB87EA00F44A8A /* btcwatchTests.swift in Sources */,
+				CEE4150C21FE688F0083296A /* btcwatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

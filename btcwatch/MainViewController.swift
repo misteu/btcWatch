@@ -17,6 +17,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    // for UI-Testing
+    view.accessibilityIdentifier = "mainView"
+    tableView.accessibilityIdentifier = "tableView"
+    currentRate.accessibilityIdentifier = "currentRate"
+    
     checkForCachedDataAndUpdateUI()
     
     requestCurrentPriceAndUpdateUI()
@@ -40,6 +45,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
       //use decoded Json response for UI updates
       if let bpi = BpiData.shared {
         self.currentRate.text = "Minutengenauer Kurs:\n\(bpi.time.updated)\n \(bpi.exchangeRate.eur.rate) EUR/BTC"
+        
+        // for UI-Testing
+        self.currentRate.accessibilityValue = "updated"
       }
     }
   }
@@ -87,6 +95,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.date.text = bpiRates[indexPath.item].0
         cell.exchangeRate.text = "\(bpiRates[indexPath.item].1) EUR/BPI"
+        
+        // for UI-Testing
+        cell.isAccessibilityElement = true
         
       }
       return cell

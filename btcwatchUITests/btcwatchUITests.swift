@@ -10,25 +10,54 @@ import XCTest
 
 class btcwatchUITests: XCTestCase {
 
+  var app: XCUIApplication!
+  
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
+      
+        app = XCUIApplication()
+      
+        app.launch()
 
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+  
+  func testMainView() {
+  
+    // check if MainView is shown
+    XCTAssertTrue(app.isDisplayingMainView)
+    
+    // check if current rate is there
+    XCTAssertTrue(app.isCurrentRateShown)
+    
+    // check if currentRate was updated
+    XCTAssertEqual(app.staticTexts["currentRate"].value as! String, "updated")
+    
+  }
+  
+  func testTableView() {
+    // check if tableView is there
+    XCTAssertTrue(app.isDisplayingMainView)
+    
+    // check if data for two weeks is there
+    XCTAssertEqual(app.tables.cells.count,14)
+  }
+  
+}
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
+extension XCUIApplication {
+  
+  var isDisplayingMainView: Bool {
+    return otherElements["mainView"].exists
+  }
+  var isDisplayingTableView: Bool {
+    return otherElements["tableView"].exists
+  }
+  
+  var isCurrentRateShown: Bool {
+    return staticTexts["currentRate"].exists
+  }
 }
